@@ -7,7 +7,9 @@
     "test-functions": "node src/functions/*.test.ts",
     "test-classes": "node src/classes/dino.test.ts && node src/classes/specialist.test.ts",
     "test-types": "node src/types/character.test.ts && node src/types/fix-errors.test.ts && node src/types/food.test.ts",
-    "test": "npm run test-functions && npm run test-classes && npm run test-types"
+    "test-generics": "node src/generics/last.test.ts && node src/generics/tree.test.ts",
+    "test-keyof-typeof": "node src/keyof-typeof/dinofacts.test.ts && node src/keyof-typeof/colorshex.test.ts",
+    "test": "npm run test-functions && npm run test-classes && npm run test-types && npm run test-generics && npm run test-keyof-typeof"
   },
   "type": "module"
 }
