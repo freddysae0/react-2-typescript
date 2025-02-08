@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@types/node": "^22.13.1",
+    "types-node": "^0.0.1-security"
+  },
+  "scripts": {
+    "test-functions": "node src/functions/*.test.ts",
+    "test-classes": "node src/classes/dino.test.ts && node src/classes/specialist.test.ts",
+    "test-types": "node src/types/character.test.ts && node src/types/fix-errors.test.ts && node src/types/food.test.ts",
+    "test": "npm run test-functions && npm run test-classes && npm run test-types"
+  },
+  "type": "module"
+}
