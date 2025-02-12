@@ -8,7 +8,7 @@ interface Warrior extends BaseCharacter {
   weapon: "Sword";
 }
 
-interface Wizard  extends BaseCharacter {
+interface Wizard extends BaseCharacter {
   weapon: "Staff";
   magic: true;
 }

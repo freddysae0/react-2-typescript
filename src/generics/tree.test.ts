@@ -1,6 +1,6 @@
 import TreeNode from "./tree.ts";
 import { describe, it } from "node:test";
-import assert from 'node:assert/strict';
+import assert from "node:assert/strict";
 
 describe("Generics", () => {
   it("TreeNode can add numbers", () => {
@@ -25,7 +25,7 @@ describe("Generics", () => {
     function stringComparison(v1: string, v2: string): number {
       if (v1 > v2) {
         return 1;
-    } else {
+      } else {
         return -1;
       }
     }
@@ -39,7 +39,11 @@ describe("Generics", () => {
     root.add("Tom");
     root.add("Matthew");
 
-    assert.equal(root.right.right?.value, "Tom", "Tom to the right of Jennifer");
+    assert.equal(
+      root.right.right?.value,
+      "Tom",
+      "Tom to the right of Jennifer"
+    );
     assert.equal(
       root.right?.left?.value,
       "Matthew",

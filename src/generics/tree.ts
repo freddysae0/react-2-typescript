@@ -8,12 +8,12 @@ class TreeNode<Type> {
   left?: TreeNode<Type>;
   right?: TreeNode<Type>;
 
-  constructor(val:Type, compare: Comparison<Type>) {
+  constructor(val: Type, compare: Comparison<Type>) {
     this.value = val;
     this.compare = compare;
   }
 
-  add(val:Type) {
+  add(val: Type) {
     if (this.compare(this.value, val) >= 0) {
       if (this.left == null) {
         this.left = new TreeNode(val, this.compare);

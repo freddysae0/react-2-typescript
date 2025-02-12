@@ -11,4 +11,3 @@ describe("Functions: dnaCost", () => {
     assert.equal(dnaCost(2500, "abc", "de", "f"), 2506);
   });
 });
-
